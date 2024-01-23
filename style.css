@@ -11,4 +11,16 @@ border: 1px solid red;
 
       
     } */
-   
+    
+    .main-1section{
+      /* height:500px;
+      width:1590px;
+      border:1px solid red; */
+      background-image:url('./Images/1.png'
+      );
+      background-repeat: no-repeat;
+      display: flex;
+      
+
+      
+    }
