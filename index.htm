@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
- .font-manrope{
-  font-family: 'Manrope', sans-serif;
- }
-</style>
+<!-- stylesheet -->
+<link rel="stylesheet" href="style.css">
   <!-- custom color tailwind -->
   <script>
     tailwind.config = {
@@ -26,6 +23,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            common:'#FF4240;',
+            des:'#FFFFFFCC;',
           }
         }
       }
@@ -33,13 +32,29 @@
   </script>
 </head>
 <body class="font-manrope">
-  <header>
-<h2>This is sakib sarker</h2>
+  <header class="container mx-auto mt-12">
+ <nav>
+  <!-- nav  -->
+  <div class="flex justify-around">
+    <h3 class="font-extrabold text-4xl">Hockey<span class="text-common">’</span>s</h3>
+    <div class="lg:flex gap-6 text-base font-normal mt-4 sm:hidden">
+      <a class="text-common" href="">Home</a>
+      <a href="">About</a>
+      <a href="">Pages</a>
+      <a href="">Blog</a>
+      <a href="">Contact us</a>
+    </div>
+
+    <div class="flex gap-4"><img class="lg:w-6 h-6 mt-3 " src="./Images/Frame.jpg" alt=""><button class=" bg-common text-white font-bold rounded-lg py-4 px-6">Get Ticket</button>
+    </div>
+    <!-- navber end -->
+  </div>
+ </nav>
   </header>
   <main>
     <!-- section 1 -->
     <section>
-
+      
     </section>
     <!-- section 2 -->
     <section>
@@ -58,12 +73,125 @@
 
 </section>
 <!-- section 6 -->
-<section>
+<section class="container mx-auto mt-20">
+  <header class=" flex flex-col text-center gap-4 ">
+    <h3 class="font-extrabold text-3xl text-black">Get In Touch</h3>
+    <p class="font-medium text-xs text-gray-600">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+  </header>
+  <!-- left site phone email and location -->
+  <div class="lg:grid grid-cols-2 justify-around gap-8">
+  <div class="mt-20">
+    <!-- first card -->
+<div class="flex flex-col gap-2 bg-[#BCED6E19] rounded-lg py-6 mb-8 px-8 w-3/4">
+ <div> <img src="./Images/Group 1171275317.png" alt=""></div>
+  <p class="text-gray-400">Phone number:</p>
+  <p class="font-bold">623-321-543</p>
+</div>
+<!-- second card -->
+<div><div class="flex flex-col gap-2 bg-[#FDDD5F19] rounded-lg py-6 mb-8 px-8 w-3/4">
+  <div> <img src="./Images/Group 1171275318.png" alt=""></div>
+   <p class="text-gray-400">Email:</p>
+   <p class="font-bold">ssar96540@gmail.com</p>
+ </div></div>
+ <!-- third card  -->
+<div><div class="flex flex-col gap-2 bg-[#629CF317] rounded-lg py-6 px-8 w-3/4">
+  <div> <img src="./Images/Group 1171275321.png" alt=""></div>
+   <p class="text-gray-400">Location:</p>
+   <p class="font-bold">
+    152/1 Mohakhali Wireless Gate</p>
+ </div></div>
+  </div>
+  <!-- right site form -->
+  <div class="mt-10">
+  <div class="lg:grid grid-cols-2 gap-x-4 gap-y-5">
+    <!-- 1 -->
+ <div>
+  <p class="font-bold text-xl mb-2">Your Name </p>
+  <input class="bg-[#13131805] rounded-xl h-16 w-80 px-6" placeholder="Enter your full name " type="email" name="" id="">
+ </div>
+ <!-- 1 -->
+ <div>
+  <p class="font-bold text-xl mb-2">Your Email </p>
+  <input class="bg-[#13131805] rounded-xl h-16 w-80 px-6" placeholder="Enter your email " type="email" name="" id="">
+ </div>
+ <!-- 2 -->
+ <div>
+  <p class="font-bold text-xl mb-2">Subject </p>
+  <input class="bg-[#13131805] rounded-xl h-16 w-80 px-6" placeholder="Enter your subject " type="email" name="" id="">
+ </div>
+ <!-- 2 -->
+ <div>
+  <p class="font-bold text-xl mb-2">Phone Number</p>
+  <input class="bg-[#13131805] rounded-xl h-16 w-80 px-6" placeholder="Enter your phone number " type="email" name="" id="">
+ </div>
+ <!-- 3 -->
+ <div>
+  <p class="font-bold text-xl mb-2">Message</p>
+  <input class="bg-[#13131805] rounded-xl h-[228px] w-[680px] pb-32 pl-5" placeholder="Enter your phone number " type="email" name="" id="">
+ </div>
+ <!-- button -->
+ <div>
+
+ </div>
+ <button class=" w-[680px] h-14 bg-common rounded-xl text-white font-bold ">
+  Send Message 
+   </button>
+</div>
+</div>
+
+ 
+</div>
+
 
 </section>
   </main>
-  <footer>
+  
+    <footer class=" mt-20 py-10 px-4 bg-black text-base-content text-white ">
+           <div class="lg:flex justify-around">
+            <div class="grid gap-6 ">
+              
+                <h2 class="font-extrabold text-3xl">Get In Touch </h2>
+                <p class="text-des">Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
+                <div class="flex gap-4 text-des">
+                  <img src="./Images/Frame.png" alt=""><p>ssar96540@gmail.com</p>
+                </div>
+               <div class="flex gap-4 text-des">
+                <img src="./Images/Frame (1).png" alt=""><p>01740228022</p>
+               </div>
+              
+            </div>
+            <div> 
+              <header class="font-bold mb-4 text-lg">Company</header> 
+              <div class="flex flex-col text-des gap-5"> 
+                <a>About us</a>
+                <a>Leadership</a>
+                <a>Careers</a>
+                <a>News & Article</a>
+                <a>Legal Notice</a></div>
+             
+         </div>
+       <div>
+       <header class="font-bold text-lg mb-4">Support</header> 
+         <div class=" flex flex-col text-des gap-5 ">
+          <a>Help Center</a>
+          <a>FAQ</a>
+          <a>Ticket Support</a>
+          <a>Contact Us</a>
+         </div>
+       </div>
+      
+    
+      <div>
+        <header class="font-bold text-lg mb-4">Services</header> 
+      <div class="flex flex-col text-des gap-5">  <a>Academy</a>
+        <a>Group Lesson</a>
+        <a>Private Leasson</a>
+        <a>Hokeys for kids</a>
+        <a>Hokeys for Adult</a></div>
+      </div>
+    </div>
 
-  </footer>
+    </footer>
+
 </body>
 </html>
